@@ -1,0 +1,74 @@
+/* Base styling */
+body {
+    background: 
+        linear-gradient(135deg, #628eb0, #dce3ea),
+        url('https://www.transparenttextures.com/patterns/cubes.png');
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+/* Centered card container */
+.container {
+    background: rgba(255, 255, 255, 0.85);  /* Semi-white card */
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Stronger depth */
+    max-width: 700px;
+    margin: 100px auto;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 123, 255, 0.15); /* Light blue border */
+}
+
+/* Main heading */
+.container h1,
+.container h2 {
+    color: #1c1c1c;
+    margin-bottom: 20px;
+}
+
+/* Paragraph text */
+.container p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Input box styling (for custom message page) */
+textarea,
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+/* Message result */
+.result {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+}

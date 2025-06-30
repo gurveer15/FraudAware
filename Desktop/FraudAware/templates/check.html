@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Message - FraudAware</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Custom Message Checker</h2>
+        <p>Paste a message and we'll check if it's suspicious.</p>
+        <form method="post">
+            <textarea name="message" rows="5" cols="50" placeholder="Paste message here..." required>{{ request.form.get('message', '') }}</textarea>
+
+            <button type="submit">Check</button>
+        </form>
+        {% if result %}
+            <h3>{{ result }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FraudAware Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Fraud Detection Quiz</h2>
+        <p><strong>Message:</strong></p>
+        <p>{{ message }}</p>
+
+        <form action="/quiz" method="post">
+            <input type="hidden" name="correct_answer" value="{{ answer }}">
+            <input type="hidden" name="explanation" value="{{ explanation }}">
+            <button type="submit" name="user_answer" value="Scam">Scam</button>
+            <button type="submit" name="user_answer" value="Real">Real</button>
+        </form>
+    </div>
+</body>
+</html>

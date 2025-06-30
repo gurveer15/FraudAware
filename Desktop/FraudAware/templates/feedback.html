@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>{{ '✅ Correct!' if feedback.correct else '❌ Incorrect!' }}</h2>
+        
+        <p><strong>Your Answer:</strong> {{ feedback.user_answer }}</p>
+        <p><strong>Correct Answer:</strong> {{ feedback.correct_answer }}</p>
+        <p><strong>Explanation:</strong> {{ feedback.explanation }}</p>
+
+        <a href="/quiz"><button>Next Question</button></a>
+    </div>
+</body>
+</html>
