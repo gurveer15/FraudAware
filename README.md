@@ -50,7 +50,6 @@ With rising cases of digital fraud, people often fall for scam messages disguise
 - Python (Flask)
 - MySQL
 - HTML + CSS
-- Jinja2
 - CapCut (for demo video editing)
 
 ---
